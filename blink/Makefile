@@ -52,7 +52,7 @@ $(TARGET).elf: $(OBJS)
 	#$(STRIP) $@
 
 
-falsh: $(TARGET).bin
+flash: $(TARGET).bin
 	@echo "$$SEGGER_FLASH_SOFTDEVICE_CMD" | $(JLINKEXE) $(JLINKOPT)
 
 # if someone types in 'make clean' then remove all object files and executables
